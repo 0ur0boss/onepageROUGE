@@ -42,14 +42,25 @@
 		alert("height0000="+height);
 		
 		
-		for (var x = 0; x < width; x++) { 
-			for (var y = 0; y < height ; y++) { 
+		// for (var x = 0; x < width; x++) { 
+		// 	for (var y = 0; y < height ; y++) { 
+		// 		tr[x][y] = 255 ;
+		// 		tg[x][y] = 0 ;
+		// 		tb[x][y] = 0 ;
+		// 		ta[x][y] = 255 ;
+		// 	}
+		// }
+
+				for (var x = 0; x < width; x = x + 15) { 
+			for (var y = 0; y < height ; y = y + 15) { 
 				tr[x][y] = 255 ;
 				tg[x][y] = 0 ;
 				tb[x][y] = 0 ;
 				ta[x][y] = 255 ;
 			}
 		}
+
+
 		
 		///////////////////////////////////////////////////////////////////
 		// passage des tableaux 2D (t?) à un tableau 1D (pix)
