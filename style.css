@@ -1,0 +1,55 @@
+
+
+body {
+    overflow-x: hidden; /* Pour cacher le scroller du bas */
+}
+
+ /* ----------------- Page accueil ----------------  */
+
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+.titrep1 {
+    color: red;
+}
+
+.header_scroll {
+    width: 100%;
+    min-height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+}
+
+.header_scroll a { 
+    display: inline-block;
+    pointer-events: all;
+}
+
+ /* ----------------- FIN Page accueil ----------------  */
+
+
+/* ----------------- Contenu ----------------  */
+
+
+
+
+
+/* ----------------- Fin Contenu ----------------  */
+
+
+
+ /* ----------------- Footer ----------------  */
+
+.container1 {
+    display: flex;
+    justify-content: center;
+}
