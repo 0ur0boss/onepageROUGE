@@ -40,46 +40,79 @@
 		
 		// alert("width="+width);
 		// alert("height0000="+height);
-		alert("aled");
+		alert("rrrrroueeeeeeeeege");
 		
 		
-		for (var x = 0; x < width; x++) { 
-			for (var y = 0; y < height ; y++) { 
+		for (var y = 0; y < height ; y++) { 
+			for (var x = 0; x < width; x = x + 8) { 
 				tr[x][y] = 255 ;
 				tg[x][y] = 0 ;
 				tb[x][y] = 0 ;
 				ta[x][y] = 255 ;
 			}
 		}
+
+		// var inversion = function() {
+		// 	for (var i = 0; i < data.length; i += 4) {
+		// 	  data[i]     = 255 - data[i];     // rouge
+		// 	  data[i + 1] = 255 - data[i + 1]; // vert
+		// 	  data[i + 2] = 255 - data[i + 2]; // bleu
+		// 	}
+		// 	ctx.putImageData(imageData, 0, 0);
+		//   };
 		
-		///////////////////////////////////////////////////////////////////
-		// passage des tableaux 2D (t?) à un tableau 1D (pix)
-		var i=0;
-		for (var x = 0; x < width; x++) { 
-			for (var y = 0; y < height ; y++) { 
-				pix[i]   = tr[x][y] ;
-				pix[i+1] = tg[x][y] ;
-				pix[i+2] = tb[x][y];
-				pix[i+3] = ta[x][y];
-				i = i + 4;
+		//   var niveaudegris = function() {
+		// 	for (var i = 0; i < data.length; i += 4) {
+		// 	  var moy = (data[i] + data[i + 1] + data[i + 2]) / 3;
+		// 	  data[i]     = moy; // rouge
+		// 	  data[i + 1] = moy; // vert
+		// 	  data[i + 2] = moy; // bleu
+		// 	}
+		// 	ctx.putImageData(imageData, 0, 0);
+		//   };
+		
+		  
+		  
+		  ///////////////////////////////////////////////////////////////////
+		  // passage des tableaux 2D (t?) à un tableau 1D (pix)
+		  var i=0;
+		  for (var x = 0; x < width; x++) { 
+			  for (var y = 0; y < height ; y++) { 
+				  pix[i]   = tr[x][y] ;
+				  pix[i+1] = tg[x][y] ;
+				  pix[i+2] = tb[x][y];
+				  pix[i+3] = ta[x][y];
+				  i = i + 4;
+				}
 			}
+			imgd.data = pix;
+			
+			// Draw the ImageData at the given (x,y) coordinates.
+			context.putImageData(imgd, 0, 0);
+			
+			var data = canvas.toDataURL('image/png');
+			photo.setAttribute('src', data);		
 		}
-		imgd.data = pix;
-
-		// Draw the ImageData at the given (x,y) coordinates.
-		context.putImageData(imgd, 0, 0);
 		
-		var data = canvas.toDataURL('image/png');
-		photo.setAttribute('src', data);		
-	}
-	
-	function afterload(){
-		invertbutton = document.getElementById('invertbutton');
-
-		invertbutton.addEventListener('click', function(ev){
-			myInvert();
+		function afterload(){
+			invertbutton = document.getElementById('invertbutton');
+			
+			invertbutton.addEventListener('click', function(ev){
+				myInvert();
 			}, false);
+			
+			// btninversion = document.getElementById('btninversion');
 
-	}
-	window.addEventListener('load', afterload, false);
-})();
+			// btninversion.addEventListener('click',function(ev){
+			// 	myInvert();
+			// }, false);
+
+			
+			// btnniveaudegris = document.getElementById('btnniveaudegris');
+
+			// btnniveaudegris.addEventListener('click', function(ev){
+			// 	myInvert();
+			// }, false);
+		}
+		window.addEventListener('load', afterload, false);
+	})();
