@@ -1,50 +1,9 @@
-
-
-body {
-    overflow-x: hidden; /* Pour cacher le scroller du bas */
-}
-
- /* ----------------- Page accueil ----------------  */
-
-
- .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
- }
-
-.titrep1 {
-    color: red;
-}
-
-.header_scroll {
-    width: 100%;
-    min-height: 30px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    margin: 0 auto;
-    position: absolute;
-    z-index: 3;
-    bottom: 0;
-}
-
-.header_scroll a { 
-    display: inline-block;
-    pointer-events: all;
-}
-
-
-
-/* ----------------- FIN Page accueil ----------------  */
-
 /* ----------------- Navbar ----------------  */
 
 #menuToggle
 {
   display: block;
-  position: relative;
+  position: fixed;
   top: 50px;
   left: 50px;
   z-index: 1;
@@ -126,7 +85,7 @@ body {
 #menu
 {
   position: absolute;
-  margin: -100px 0 0 -50px;
+  margin: -100px 0 0 -51px;
   padding: 50px;
   padding-top: 125px;
   
@@ -156,12 +115,116 @@ body {
 
 /* ----------------- FIN NavBar ----------------  */
 
-/* ----------------- Contenu ----------------  */
+/* ----------------- Page accueil ----------------  */
 
-.text1 {
-    font-size: 3vh;
+
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+.header_scroll {
+  width: 99%;
+  min-height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+}
+
+.header_scroll a { 
+  display: inline-block;
+  pointer-events: all;
+}
+
+
+
+/* ----------------- FIN Page accueil ----------------  */
+
+/* ----------------- Contenu ----------------  */
+
+.artwork {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+.artwork_text {
+  margin: 0 150px;
+}
+
+.artwork img {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+}
+
+.text_art {
+  font-size: 20px;
+  max-width: 400px;
+}
+
+.text_art p {
+  text-align: left !important;
+}
+
+
+#artworktest {
+
+}
+
+.artwork_picture1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#intro {
+  height: 30vh;
+}
+
+.artwork h3 {
+  text-align: left;
+}
+
+.artwork p {
+  font-size: 2.5vh;
+  text-align: left;
+}
+
+.artwork_picture h1 {
+  text-align: left;
+}
+
+/* .text1 {
+    font-size: 2.5vh;
+    text-align: center;
+} */
+
+/* .titre1 {
+  text-align: center;
+} */
+
+.introduction {
+  font-size: 2.5vh;
+  text-align: center;
+
+}
+
+.contenu {
+  font-size: 2.5vh;
+  text-align: center;
+
+}
+
+.img1 {
+  display: flex;
+  /* margin: auto; */
+}
 
 
 /* ----------------- Fin Contenu ----------------  */
@@ -171,4 +234,16 @@ body {
 .container1 {
     display: flex;
     justify-content: center;
+}
+
+
+/* AUTRE */
+
+@media screen and (max-width: 767px) {
+  .img1 {
+      width: 10%;
+      height: 10%;
+      margin: auto;
+
+  }
 }
