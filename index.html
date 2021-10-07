@@ -10,13 +10,14 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/68b1f887b3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scrollbar.css">
 
   <link rel="icon" href="img/logo.svg" type="" sizes="16x16">
   <title>Rouge</title>
 
 </head>
 <!-- Menu Hamburger -->
-<nav role="navigation">
+<!-- <nav role="navigation">
   <div id="menuToggle">
 
     <input type="checkbox" />
@@ -30,28 +31,34 @@
         <li>Accueil</li>
       </a>
       <a href="#artwork1">
-        <li>Oeuvre1</li>
+        <img src="img/La Mort de Sardanapale.png">
       </a>
       <a href="#artwork1">
-        <li>Oeuvre2</li>
+        <img src="img/Gas.png">
       </a>
       <a href="#artwork2">
-        <li>Oeuvre3</li>
+        <img src="img/Stageworkers.png">
       </a>
       <a href="#artwork3">
-        <li>Oeuvre4</li>
+        <img src="img/Angel of War.png">
       </a>
       <a href="#" target="_blank">
-        <li>Plus</li>
+        <img src="">
       </a>
     </ul>
   </div>
-</nav>
+</nav> -->
+
+
+<nav id='scroll-indicator'></nav>
+
 
 <body>
+
+  
   <div class="container">
     <!-- Page d'accueil -->
-    <section id="homepage">
+    <section data-title='One' id="homepage one">
       <img src="img/logo.svg">
   </div>
   <div class="header_scroll">
@@ -60,7 +67,7 @@
     </a>
   </div>
   </section>
-  <section id="intro">
+  <section data-title='Two'id="intro two">
     <p class="introduction">
       Le rouge est une couleur ambiguë. Il a de très nombreuses interprétations dont certaines se contredisent. À la
       fois symbolique d’amour et de haine, de colère et de passion, de courage et d’interdiction. On a, d’un côté, la
@@ -71,7 +78,7 @@
   <!-- Contenu -->
 
   <!-- Oeuvre 1 -->
-  <section id="artwork1">
+  <section data-title='Three' id="three artwork1">
     <div class="artwork">
       <img id="oeuvre1" name="img01" crossorigin='anonymous' src="img/tableau1.jpg" class="aie">
       <canvas id="canvas1" style="display:none;"></canvas>
@@ -119,7 +126,7 @@
 
 
   <!-- Oeuvre 2 -->
-  <section id="artwork2">
+  <section  data-title='Four' id="four artwork2">
     <div class="artwork">
       <div class="text_art">
         <h2> Contexte </h2>
@@ -160,7 +167,7 @@
 
 
   <!-- Oeuvre 3 -->
-  <section id="artwork3">
+  <section data-title='Five' id="five artwork3">
     <div class="artwork">
       <img id="oeuvre3" name="img04" crossorigin='anonymous' src="img/tableau1.jpg" class="aie">
       <canvas id="canvas3" style="display:none;"></canvas>
@@ -209,7 +216,7 @@
     </div>
   </section>
   <!-- Oeuvre 4 -->
-  <section id="artwork4">
+  <section data-title='Six' id="six artwork4" >
     <div class="artwork">
 
       <div class="text_art">
@@ -274,6 +281,7 @@
   <script src="filter2.js"></script>
   <script src="filter3.js"></script>
   <script src="filter4.js"></script>
+  <script src="jb.js"></script>
 </body>
 
 
