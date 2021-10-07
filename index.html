@@ -10,7 +10,7 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/68b1f887b3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="scrollbar.css">
+  <!-- <link rel="stylesheet" href="scrollbar.css"> -->
 
   <link rel="icon" href="img/logo.svg" type="" sizes="16x16">
   <title>Rouge</title>
@@ -50,34 +50,38 @@
 </nav> -->
 
 
-<nav id='scroll-indicator'></nav>
+<!-- <nav id='scroll-indicator'></nav> -->
 
 
 <body>
-  <div class="container" id="home">
+  
+  <section data-title='Accueil' id="one">
     <!-- Page d'accueil -->
-    <section data-title='One' id="homepage one">
-      <img src="img/logo.svg">
-  </div>
-  <div class="header_scroll">
-    <a href="#intro" class="">
-      <i class="fas fa-chevron-down"></i>
-    </a>
-  </div>
-  </section>
-  <section data-title='Two'id="intro two">
-    <p class="introduction">
-      <br>
-      Le rouge est une couleur ambiguë. Il a de très nombreuses interprétations dont certaines se contredisent. À la
-      fois symbolique d’amour et de haine, de colère et de passion, de courage et d’interdiction. On a, d’un côté, la
-      beauté, la joie, le plaisir et, de l’autre, la violence, les crimes de sang, la guerre, la punition, le péché...
-      Ensemble, traversons 4 œuvres d’époques différentes aux valeurs de rouge différentes.
-    </p>
+    <div class="container" id="home">
+        <div id="homepage">
+            <img src="img/logo.svg">
+            <div class="header_scroll">
+              <a href="#intro" class="">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+      </div>
+
+      <div id="intro">
+        <p class="introduction">
+          <br>
+          Le rouge est une couleur ambiguë. Il a de très nombreuses interprétations dont certaines se contredisent. À la
+          fois symbolique d’amour et de haine, de colère et de passion, de courage et d’interdiction. On a, d’un côté, la
+          beauté, la joie, le plaisir et, de l’autre, la violence, les crimes de sang, la guerre, la punition, le péché...
+          Ensemble, traversons 4 œuvres d’époques différentes aux valeurs de rouge différentes.
+        </p>
+      </div>
   </section>
   <!-- Contenu -->
 
   <!-- Oeuvre 1 -->
-  <section data-title='Three' id="three artwork1">
+  <section data-title='Oeuvre1' id="two artwork1">
     <div class="artwork">
       <img id="oeuvre1" name="img01" crossorigin='anonymous' src="img/oeuvre1.jpg" class="aie">
       <canvas id="canvas1" style="display:none;"></canvas>
@@ -127,9 +131,8 @@
       </div>
   </section>
 
-
   <!-- Oeuvre 2 -->
-  <section  data-title='Four' id="four artwork2">
+  <section  data-title='Oeuvre2' id="three artwork2">
     <div class="artwork">
       <div class="text_art">
         <h2> Contexte </h2>
@@ -175,9 +178,8 @@
     </div>
   </section>
 
-
   <!-- Oeuvre 3 -->
-  <section data-title='Five' id="five artwork3">
+  <section data-title='Oeuvre3' id="four artwork3">
     <div class="artwork">
       <img id="oeuvre3" name="img03" crossorigin='anonymous' src="img/oeuvre3.jpg" class="aie">
       <canvas id="canvas3" style="display:none;"></canvas>
@@ -222,8 +224,9 @@
       </p>
     </div>
   </section>
+
   <!-- Oeuvre 4 -->
-  <section data-title='Six' id="six artwork4" >
+  <section data-title='Oeuvre4' id="five artwork4" >
     <div class="artwork">
 
       <div class="text_art">
@@ -285,6 +288,7 @@
       </p>
     </div>
   </section>
+
   <div class="container1">
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -301,7 +305,7 @@
   <script src="filter2.js"></script>
   <script src="filter3.js"></script>
   <script src="filter4.js"></script>
-  <script src="jb.js"></script>
+  <!-- <script src="jb.js">     </script> -->
 </body>
 
 

@@ -77,7 +77,6 @@ ScrollIndicator = (function(){
 })();
 
 
-
 GlobalScroll = (function() {
 	var scrollPos;
 	

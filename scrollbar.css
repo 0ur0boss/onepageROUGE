@@ -1,13 +1,7 @@
 html {
 	scroll-behavior: smooth;
 }
-section {
-	height: 100vh;
-}
-section:nth-child(2n) {
-	color: white;
-	background: lightblue;
-}
+
 #scroll-indicator {
 	position: sticky;
 	top: 50%;
@@ -31,11 +25,13 @@ section:nth-child(2n) {
 #scroll-indicator li.active a {
 	height: 44px;
 }
+
+/* le nom des rubrique */
 #scroll-indicator li:before {
 	content: attr(data-title);
 	position: absolute;
 	bottom: -5px;
-	left: calc(100% + 20px);
+	left: 10em;
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 1;
@@ -44,6 +40,8 @@ section:nth-child(2n) {
 	visibility: hidden;
 	transition: left 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
+
+/* les tiret normal */
 #scroll-indicator li:after {
 	content: "";
 	display: block;
@@ -51,20 +49,22 @@ section:nth-child(2n) {
 	bottom: 0px;
 	left: 2px;
 	height: 2px;
-	width: calc(100% - 4px);
+	width: 3em;
 	background: black;
 	pointer-events: none;
 	transition: width 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, height 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, left 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, bottom 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s;
 }
+
+/* les tiret avec la souris dessus */
 #scroll-indicator li:hover:after {
 	left: 0px;
 	bottom: -1px;
-	width: 100%;
+	width: 3.5em;
 	height: 4px;
 	transition: width 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), height 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), left 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), bottom 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 #scroll-indicator li:hover:before {
-	left: calc(100% + 10px);
+	left: 5em;
 	opacity: 1;
 	visibility: visible;
 }
