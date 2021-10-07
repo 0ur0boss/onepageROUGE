@@ -48,7 +48,7 @@ html {
 	position: absolute;
 	bottom: 0px;
 	left: 2px;
-	height: 2px;
+	height: 7px;
 	width: 3em;
 	background: black;
 	pointer-events: none;
@@ -60,7 +60,7 @@ html {
 	left: 0px;
 	bottom: -1px;
 	width: 3.5em;
-	height: 4px;
+	height: 7.5px;
 	transition: width 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), height 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), left 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), bottom 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 #scroll-indicator li:hover:before {
@@ -71,7 +71,7 @@ html {
 #scroll-indicator a {
 	display: block;
 	position: relative;
-	height: 4px;
+	height: 10px;
 	margin: 4px 0 0 0;
 	font-weight: bold;
 	font-size: 40px;
