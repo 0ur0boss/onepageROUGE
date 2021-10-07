@@ -148,6 +148,10 @@
   margin: 0 150px;
 }
 
+.artwork button {
+  margin: 5px 5px;
+}
+
 .actions {
   display: flex;
   text-align: left;
@@ -155,9 +159,10 @@
   margin: 0 150px;
 }
 
-.actions button {
-  margin: 0 16px;
+.btn-actions {
+margin: 10px 15px;
 }
+
 
 .artwork_text {
   margin: 0 150px;
@@ -251,4 +256,17 @@
   .artwork_text {
     margin: 0 15px;
   }
+}
+
+
+/*ALVINA DIV*/
+
+.div-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-row {
+  display: flex;
+  flex-direction: row;
 }
