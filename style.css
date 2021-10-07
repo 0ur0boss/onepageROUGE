@@ -142,10 +142,30 @@
 
 /* ----------------- Contenu ----------------  */
 
+#artwork1{
+  margin-bottom: 75px;
+}
+
+#artwork2{
+  margin-bottom: 75px;
+}
+
+#artwork3{
+  margin-bottom: 75px;
+}
+
+#artwork4{
+  margin-bottom: 75px;
+}
+
 .artwork {
   display: flex;
   justify-content: space-between;
   margin: 0 150px;
+}
+
+.artwork button {
+  margin: 5px 5px;
 }
 
 .actions {
@@ -155,9 +175,10 @@
   margin: 0 150px;
 }
 
-.actions button {
-  margin: 0 16px;
+.btn-actions {
+  margin: 10px 15px;
 }
+
 
 .artwork_text {
   margin: 0 150px;
@@ -203,7 +224,7 @@
 .introduction {
   font-size: 2.5vh;
   text-align: center;
-
+  margin: 50px 150px;
 }
 
 .contenu {
@@ -251,4 +272,34 @@
   .artwork_text {
     margin: 0 15px;
   }
+  .introduction {
+    margin: 5px 20px;
+    padding-bottom: 20px;
+  }
+  #artwork1{
+    margin-bottom: 25px;
+  }
+  #artwork2{
+    margin-bottom: 25px;
+  }
+  #artwork3{
+    margin-bottom: 25px;
+  }
+  #artwork4{
+    margin-bottom: 25px;
+  }
+  
+}
+
+
+/*ALVINA DIV alvina est une blg*/
+
+.div-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-row {
+  display: flex;
+  flex-direction: row;
 }
