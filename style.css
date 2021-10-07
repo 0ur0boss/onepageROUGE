@@ -81,7 +81,6 @@
   transform: rotate(0deg) scale(0.2, 0.2); /* Je cache la troisieme barre du menu */
 }
 
-
 #menu
 {
   position: absolute;
@@ -109,9 +108,6 @@
 {
   transform: none; /* Comme ça on ne voit pas encore le menu */
 }
-
-
-
 
 /* ----------------- FIN NavBar ----------------  */
 
@@ -142,8 +138,6 @@
   pointer-events: all;
 }
 
-
-
 /* ----------------- FIN Page accueil ----------------  */
 
 /* ----------------- Contenu ----------------  */
@@ -154,6 +148,10 @@
   margin: 0 150px;
 }
 
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+}
 .artwork_text {
   margin: 0 150px;
 }
@@ -224,7 +222,10 @@
 
 /* AUTRE */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .artwork {
+    flex-direction: column;
+  }
   .img1 {
       width: 10%;
       height: 10%;
