@@ -173,11 +173,6 @@
   text-align: left !important;
 }
 
-
-#artworktest {
-
-}
-
 .artwork_picture1 {
   display: flex;
   justify-content: space-around;
@@ -200,15 +195,6 @@
   text-align: left;
 }
 
-/* .text1 {
-    font-size: 2.5vh;
-    text-align: center;
-} */
-
-/* .titre1 {
-  text-align: center;
-} */
-
 .introduction {
   font-size: 2.5vh;
   text-align: center;
@@ -223,7 +209,6 @@
 
 .img1 {
   display: flex;
-  /* margin: auto; */
 }
 
 
