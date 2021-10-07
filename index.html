@@ -72,25 +72,26 @@
 
   <!-- Oeuvre 1 -->
   <section id="artwork1">
-    <div>
-      <div class="artwork">
-        <img src="img/tableau1.jpg" class="aie">
-        <div class="text_art">
-          <h2> Oeuvre </h2>
-          <p>Eugène Delacroix est un peintre français. Notamment connu pour son tableau “La Liberté guidant le peuple”,
-            il est considéré comme étant un pilier du mouvement romantique. Inspiré d'un poème de Byron, il réalise “La
-            mort de Sardanapale” qui décrit la fin du souverain Sardanapale. Le tyran assyrien sentant le renversement
-            de son pouvoir, décide de faire exécuter ses esclaves, maîtresses et animaux. Mais au début, cette œuvre ne
-            va pas marcher du tout. Présentée au Salon de 1827-1828, la toile fait scandale. Sur le moment, la toile est
-            considérée comme le plus mauvais tableau du salon.</p>
-          <h3>La mort de Sardanapale - Eugène Delacroix, 1827</h3>
-        </div>
+    <div class="artwork">
+      <img id="oeuvre1" name="img01" crossorigin='anonymous' src="img/tableau1.jpg" class="aie">
+      <canvas id="canvas1" style="display:none;"></canvas>
+      <div class="text_art">
+        <h2> Oeuvre </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate vel nemo deleniti velit in
+          dolor, numquam doloribus aliquid, error suscipit dolorem nobis necessitatibus laboriosam. Earum provident
+          atque
+          beatae
+          veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse minus ad labore aperiam quas
+          architecto consequatur quibusdam consequuntur, nihil ullam consectetur quae repudiandae modi quod, in
+          quisquam?
+          Fugiat, est.</p>
+        <h3>La mort de ce ptn de Sardanapale</h3>
       </div>
       <div class="actions">
-        <button type="button" class="btn btn-danger">Effet1</button>
-        <button type="button" class="btn btn-danger">Effet1</button>
-        <button type="button" class="btn btn-danger">Effet1</button>
-        <button type="button" class="btn btn-danger">Effet1</button>
+        <button onclick="negatife1();" type="button" class="btn btn-danger">negatife</button>
+        <button onclick="gris1();"     type="button" class="btn btn-danger">gris</button>
+        <button onclick="rouge1();"    type="button" class="btn btn-danger">rouge</button>
+        <button onclick="javascript:document.img01.src='img/tableau1.jpg'" type="button" class="btn btn-danger">Reset</button>
       </div>
     </div>
 
@@ -131,7 +132,8 @@
           la scène d’une pièce de théâtre. </p>
         <h3>Stageworkers - Kristoffer Zetterstrand, 2008</h3>
       </div>
-      <img src="img/tableau1.jpg" class="aie">
+      <img id="oeuvre2" name="img02" crossorigin='anonymous'src="img/tableau1.jpg" class="aie">
+      <canvas id="canvas2" style="display:none;"></canvas>
     </div>
     <div class="artwork_text artwork__context">
       <h3>Analyse</h3>
@@ -160,7 +162,8 @@
   <!-- Oeuvre 3 -->
   <section id="artwork3">
     <div class="artwork">
-      <img src="img/tableau1.jpg" class="aie">
+      <img id="oeuvre3" name="img04" crossorigin='anonymous' src="img/tableau1.jpg" class="aie">
+      <canvas id="canvas3" style="display:none;"></canvas>
       <div class="text_art">
         <h2> Oeuvre </h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate vel nemo deleniti velit in
@@ -221,7 +224,8 @@
           Fugiat, est.</p>
         <h3>La mort de ce ptn de Sardanapale</h3>
       </div>
-      <img src="img/tableau1.jpg" class="aie">
+      <img id="oeuvre4" name="img04" crossorigin='anonymous'src="img/tableau1.jpg" class="aie">
+      <canvas id="canvas4" style="display:none;"></canvas>
     </div>
     <div class="artwork_text artwork__context">
       <h3>Contexte</h3>
@@ -266,7 +270,10 @@
       <p class="text-center text-muted">© 2021 Red Company, Tous droits réservés.</p>
     </footer>
   </div>
-  <script src="filter.js"></script>
+  <script src="filter1.js"></script>
+  <script src="filter2.js"></script>
+  <script src="filter3.js"></script>
+  <script src="filter4.js"></script>
 </body>
 
 
