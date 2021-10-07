@@ -49,15 +49,32 @@ ScrollIndicator = (function(){
 		for (var i = 0; i < sections.length; i++) {
 			
 			var count = (i < 10 ? '0' : '') + (i + 1),
-					section = sections[i],
-					li = document.createElement('li'),
-					a = document.createElement('a'),
-					id = section.id;
+				section = sections[i],
+				li = document.createElement('li'),
+				a = document.createElement('a'),
+				id = section.id;
+				// if (count = 01){
+				// 	a.innerHTML = "🏠"
+				// } else if(count = 02){
+				// 	a.innerHTML = "💀"
+				// }else if(count = 03){
+				// 	a.innerHTML = "⛽"
+				// }else if(count = 04){
+				// 	a.innerHTML = "🌹"
+				// }else{
+				// 	a.innerHTML = "🔪"
+				// }
+
+				
+				li.setAttribute('data-title', section.getAttribute('data-title'));
+				
+				a.innerHTML = count;
+				a.href = '#' + id;
+
 			
-			li.setAttribute('data-title', section.getAttribute('data-title'));
-			
-			a.innerHTML = count;
-			a.href = '#' + id;
+			console.log("a =",a);
+			console.log("id =",id);
+			console.log("count =",count);
 			
 			li.appendChild(a);
 			ul.appendChild(li);
