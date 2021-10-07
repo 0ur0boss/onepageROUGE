@@ -150,8 +150,15 @@
 
 .actions {
   display: flex;
-  justify-content: space-evenly;
+  text-align: left;
+  justify-content: flex-start;
+  margin: 0 150px;
 }
+
+.actions button {
+  margin: 0 16px;
+}
+
 .artwork_text {
   margin: 0 150px;
 }
@@ -226,10 +233,22 @@
   .artwork {
     flex-direction: column;
   }
-  .img1 {
+  /* .img1 {
       width: 10%;
       height: 10%;
       margin: auto;
+  } */
+  .artwork_text {
+    margin: 0 100px;
+  }
+}
 
+@media screen and (max-width: 426px) {
+  .artwork {
+    flex-direction: column;
+    margin: 0 15px;
+  }
+  .artwork_text {
+    margin: 0 15px;
   }
 }
