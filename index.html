@@ -54,7 +54,7 @@
 
 
 <body>
-  
+
   <section data-title='Accueil' id="one"></section>
   <div class="container" id="home">
     <!-- Page d'accueil -->
@@ -76,15 +76,25 @@
       Ensemble, traversons 4 œuvres d’époques différentes aux valeurs de rouge différentes.
     </p>
   </article>
-</section>
+  </section>
   <!-- Contenu -->
 
   <!-- Oeuvre 1 -->
   <section data-title='Oeuvre-1' id="two artwork1">
     <div class="artwork">
-      <img id="oeuvre1" name="img01" crossorigin='anonymous' src="img/oeuvre1.jpg" class="aie">
-      <canvas id="canvas1" style="display:none;"></canvas>
-      <div class="text_art"">
+      <div class="test2">
+        <img id="oeuvre1" name="img01" crossorigin='anonymous' src="img/oeuvre1.jpg" class="aie">
+        <canvas id="canvas1" style="display:none;"></canvas>
+        <div class=" actions div-row">
+          <button onclick="negatife1();" type="button" class="btn btn-danger btn-actions">Négatif</button>
+          <button onclick="gris1();" type="button" class="btn btn-danger btn-actions">Gris</button>
+          <button onclick="rouge1();" type="button" class="btn btn-danger btn-actions">Rouge</button>
+          <button onclick="javascript:document.img01.src='img/oeuvre1.jpg'" class="btn btn-danger btn-actions"
+            type="button" class="btn btn-danger">Reset</button>
+        </div>
+      </div>
+
+      <div class="text_art">
         <h2> Contexte </h2>
         <p>Eugène Delacroix est un peintre français. Notamment connu pour son tableau “La Liberté guidant le peuple”, il
           est considéré comme étant un pilier du mouvement romantique. Inspiré d'un poème de Byron, il réalise “La mort
@@ -95,43 +105,37 @@
         <h3>La mort de Sardanapale - Eugène Delacroix, 1827</h3>
       </div>
     </div>
-    <div class=" actions div-row">
-        <button onclick="negatife1();" type="button" class="btn btn-danger btn-actions">Négatif</button>
-        <button onclick="gris1();" type="button" class="btn btn-danger btn-actions">Gris</button>
-        <button onclick="rouge1();" type="button" class="btn btn-danger btn-actions">Rouge</button>
-        <button onclick="javascript:document.img01.src='img/oeuvre1.jpg'" class="btn btn-danger btn-actions"
-          type="button" class="btn btn-danger">Reset</button>
-      </div>
 
 
-      <div class="artwork_text artwork__context">
-        <h3>Analyse</h3>
-        <p>Assiégé dans son palais, Sardanapale reste calme, reposant sur son lit. Il attend que ses ordres soient mis à
-          exécution : le sacrifice de ses femmes, pages, chiens, chevaux. Une grande barbarie est en cours mais lui
-          reste
-          impassible. Il sait que son sort va le rattraper. La scène est un immense chaos : des corps bousculés,
-          meurtris,
-          des bêtes apeurés, des joyaux jonchant le sol. Dans un mélange de violence et de confusion. Dans le poème
-          d’origine, Sardanapale accompagné de son épouse attend de se faire dévorer par les flammes. Le feu est ici
-          absent du tableau, mais l’omniprésence du rouge nous donne l'impression qu'il dévore déjà la chambre. On se
-          trouve dans une apothéose de la cruauté au croisement avec la passion.
-        </p>
-      </div>
-      <div class="artwork_text artwork__context">
-        <h3>Utilisation du Rouge</h3>
-        <p>Ici, le rouge c’est le rouge du drap du lit de Sardanapale. Ce rouge n’est pas là par hasard : le drap
-          remplace
-          le sang. On ne voit aucune trace de sang dans l'œuvre elle-même et pourtant elle nous paraît tellement
-          sanglante. Elle s’agite et se dérobe comme une cascade de sang. D’un autre côté, de voir toutes ces
-          maîtresses,
-          on peut se dire que le rouge a une autre signification. Le rouge est aussi la représentation de la passion. On
-          se retrouve alors ici dans un condensé paradoxal de sensualité et de violence.
-        </p>
-      </div>
+
+    <div class="artwork_text artwork__context">
+      <h3>Analyse</h3>
+      <p>Assiégé dans son palais, Sardanapale reste calme, reposant sur son lit. Il attend que ses ordres soient mis à
+        exécution : le sacrifice de ses femmes, pages, chiens, chevaux. Une grande barbarie est en cours mais lui
+        reste
+        impassible. Il sait que son sort va le rattraper. La scène est un immense chaos : des corps bousculés,
+        meurtris,
+        des bêtes apeurés, des joyaux jonchant le sol. Dans un mélange de violence et de confusion. Dans le poème
+        d’origine, Sardanapale accompagné de son épouse attend de se faire dévorer par les flammes. Le feu est ici
+        absent du tableau, mais l’omniprésence du rouge nous donne l'impression qu'il dévore déjà la chambre. On se
+        trouve dans une apothéose de la cruauté au croisement avec la passion.
+      </p>
+    </div>
+    <div class="artwork_text artwork__context">
+      <h3>Utilisation du Rouge</h3>
+      <p>Ici, le rouge c’est le rouge du drap du lit de Sardanapale. Ce rouge n’est pas là par hasard : le drap
+        remplace
+        le sang. On ne voit aucune trace de sang dans l'œuvre elle-même et pourtant elle nous paraît tellement
+        sanglante. Elle s’agite et se dérobe comme une cascade de sang. D’un autre côté, de voir toutes ces
+        maîtresses,
+        on peut se dire que le rouge a une autre signification. Le rouge est aussi la représentation de la passion. On
+        se retrouve alors ici dans un condensé paradoxal de sensualité et de violence.
+      </p>
+    </div>
   </section>
 
   <!-- Oeuvre 2 -->
-  <section  data-title='Oeuvre-2' id="three artwork2">
+  <section data-title='Oeuvre-2' id="three artwork2">
     <div class="artwork">
       <div class="text_art">
         <h2> Contexte </h2>
@@ -142,17 +146,20 @@
           de ses peintures antérieures. En 2008, il réalise “Stageworkers” (ou “Les travailleurs de scène” en français)
           est une peinture à l’huile de Kristoffer Zetterstrand, et représentant des techniciens du spectacle préparant
           la scène d’une pièce de théâtre. </p>
+
         <h3>Stageworkers - Kristoffer Zetterstrand, 2008</h3>
       </div>
-      <img id="oeuvre2" name="img02" crossorigin='anonymous' src="img/oeuvre2.jpg" class="aie">
-      <canvas id="canvas2" style="display:none;"></canvas>
-    </div>
-    <div class="actions div-row" style="align: right;">
-      <button onclick="negatife2();" type="button" class="btn btn-danger btn-actions">Négatif</button>
-      <button onclick="gris2();" type="button" class="btn btn-danger btn-actions">Gris</button>
-      <button onclick="rouge2();" type="button" class="btn btn-danger btn-actions">Rouge</button>
-      <button onclick="javascript:document.img02.src='img/oeuvre2.jpg'" class="btn btn-danger btn-actions"
-        type="button">Reset</button>
+      <div class="test2">
+        <img id="oeuvre2" name="img02" crossorigin='anonymous' src="img/oeuvre2.jpg" class="aie">
+        <canvas id="canvas2" style="display:none;"></canvas>
+        <div class="actions1 div-row">
+          <button onclick="negatife2();" type="button" class="btn btn-danger btn-actions">Négatif</button>
+          <button onclick="gris2();" type="button" class="btn btn-danger btn-actions">Gris</button>
+          <button onclick="rouge2();" type="button" class="btn btn-danger btn-actions">Rouge</button>
+          <button onclick="javascript:document.img02.src='img/oeuvre2.jpg'" class="btn btn-danger btn-actions"
+            type="button">Reset</button>
+        </div>
+      </div>
     </div>
     <div class="artwork_text artwork__context">
       <h3>Analyse</h3>
@@ -180,8 +187,17 @@
   <!-- Oeuvre 3 -->
   <section data-title='Oeuvre-3' id="four artwork3">
     <div class="artwork">
-      <img id="oeuvre3" name="img03" crossorigin='anonymous' src="img/oeuvre3.jpg" class="aie">
-      <canvas id="canvas3" style="display:none;"></canvas>
+      <div class="test2">
+        <img id="oeuvre3" name="img03" crossorigin='anonymous' src="img/oeuvre3.jpg" class="aie">
+        <canvas id="canvas3" style="display:none;"></canvas>
+        <div class="actions div-row">
+          <button onclick="negatife3();" type="button" class="btn btn-danger btn-actions">Négatif</button>
+          <button onclick="gris3();" type="button" class="btn btn-danger btn-actions">Gris</button>
+          <button onclick="rouge3();" type="button" class="btn btn-danger btn-actions">Rouge</button>
+          <button onclick="javascript:document.img03.src='img/oeuvre3.jpg'" class="btn btn-danger btn-actions"
+            type="button">Reset</button>
+        </div>
+      </div>
       <div class="text_art">
         <h2> Contexte </h2>
         <p>Kristoffer Zetterstrand est un artiste suédois surréaliste. Il est plus souvent connu comme étant l’artiste
@@ -194,13 +210,7 @@
         <h3>Stageworkers - Kristoffer Zetterstrand, 2008</h3>
       </div>
     </div>
-    <div class="actions div-row">
-      <button onclick="negatife3();" type="button" class="btn btn-danger btn-actions">Négatif</button>
-      <button onclick="gris3();" type="button" class="btn btn-danger btn-actions">Gris</button>
-      <button onclick="rouge3();" type="button" class="btn btn-danger btn-actions">Rouge</button>
-      <button onclick="javascript:document.img03.src='img/oeuvre3.jpg'" class="btn btn-danger btn-actions"
-        type="button">Reset</button>
-    </div>
+
     <div class="artwork_text artwork__context">
       <h3>Analyse</h3>
       <p>Dans une de ses années les plus prolifiques, Zetterstrand nous dévoile une œuvre très intéressante : à la fois
@@ -225,11 +235,11 @@
   </section>
 
   <!-- Oeuvre 4 -->
-  <section data-title='Oeuvre-4' id="five artwork4" >
+  <section data-title='Oeuvre-4' id="five artwork4">
     <div class="artwork">
 
       <div class="text_art">
-        <h2> Oeuvre </h2>
+        <h2> Contexte </h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate vel nemo deleniti velit in
           dolor, numquam doloribus aliquid, error suscipit dolorem nobis necessitatibus laboriosam. Earum provident
           atque
@@ -246,24 +256,27 @@
           une figure entourée de rouge.<br>
           Avec de la fumée autour d'elle qui monte<br>
           il chantait aux nouveaux morts.<br>
-           
+
           "Ne donnez pas ce qui ne peut être pris"<br>
           Sa bouche n'a pas bougé.<br>
           "Il n'y a pas de pays pour nous,<br>
           et aucun fruit dans ce bosquet" </p>
       </div>
-      <img id="oeuvre4" name="img04" crossorigin='anonymous' src="img/oeuvre4.png" class="aie">
-      <canvas id="canvas4" style="display:none;"></canvas>
+      <div class="test2">
+        <img id="oeuvre4" name="img04" crossorigin='anonymous' src="img/oeuvre4.png" class="aie">
+        <canvas id="canvas4" style="display:none;"></canvas>
+        <div class="actions1 div-row">
+          <button onclick="negatife4();" type="button" class="btn btn-danger btn-actions">Négatif</button>
+          <button onclick="gris4();" type="button" class="btn btn-danger btn-actions">Gris</button>
+          <button onclick="rouge4();" type="button" class="btn btn-danger btn-actions">Rouge</button>
+          <button onclick="javascript:document.img04.src='img/oeuvre4.png'" class="btn btn-danger btn-actions"
+            type="button">Reset</button>
+        </div>
+      </div>
     </div>
-    <div class="actions div-row">
-      <button onclick="negatife4();" type="button" class="btn btn-danger btn-actions">Négatif</button>
-      <button onclick="gris4();" type="button" class="btn btn-danger btn-actions">Gris</button>
-      <button onclick="rouge4();" type="button" class="btn btn-danger btn-actions">Rouge</button>
-      <button onclick="javascript:document.img04.src='img/oeuvre4.png'" class="btn btn-danger btn-actions"
-        type="button">Reset</button>
-    </div>
+
     <div class="artwork_text artwork__context">
-      <h3>Contexte</h3>
+      <h3>Analyse</h3>
       <p>Pete est un illustrateur américain et concept artist indépendant. Il commence par travailler pour Wizards of
         the Coast, sur des illustrations pour Magic: The Gathering en 2011. À partir de 2014, il travaille à temps plein
         sur Angelarium où il publie régulièrement ses tableaux d’anges. Des anges qui sont assez éloignés des
@@ -272,7 +285,7 @@
       </p>
     </div>
     <div class="artwork_text artwork__context">
-      <h3>ROUGE</h3>
+      <h3>Utilisation du Rouge</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate vel nemo
         deleniti
         velit in
