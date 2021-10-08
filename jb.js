@@ -23,15 +23,28 @@ ScrollIndicator = (function(){
 	}
 	
 	function init() {
+		var icone1,icone2,icone3,icone4;
 		
 		scrollIndicator = document.getElementById('scroll-indicator');
 		sections = document.querySelectorAll('section');
 		
+		icone1 = new Image();
+		icone2 = new Image();
+		icone3 = new Image();
+		icone4 = new Image();
+
+		icone1.src = "img/La Mort de Sardanapale.png";
+		icone2.src = "img/Gas.png";
+		icone3.src = "img/Stageworkers.png";
+		icone4.src = "img/Angel of War.png";
+
+		console.log("icone 1 =",icone1);
+		// console.log("icone et src 1 =",icone1.src);
+
 		var ul = document.createElement('ul');
 		
 		//build the scroll nav
 		for (var i = 0; i < sections.length; i++) {
-			var aled = 0;
 			var count = (i < 10 ? '0' : '') + (i + 1),
 				section = sections[i],
 				li = document.createElement('li'),
@@ -39,15 +52,15 @@ ScrollIndicator = (function(){
 				id = section.id;
 	
 				if (count == 01){
-					a.innerHTML = "🏠"
+					a.innerHTML = "1"
 				} else if(count == 02){
-					a.innerHTML = "💀"
+					a.appendChild(icone1);
 				}else if(count == 03){
-					a.innerHTML = "⛽"
+					a.appendChild(icone2);
 				}else if(count == 04){
-					a.innerHTML = "🌹"
+					a.appendChild(icone3);
 				}else{
-					a.innerHTML = "🔪"
+					a.appendChild(icone4);
 				}
 
 				
@@ -55,14 +68,10 @@ ScrollIndicator = (function(){
 				
 				// a.innerHTML = count;
 				a.href = '#' + id;
-
-				aled = aled + 1;
-				console.log("nombre de boucle :",aled);
-
 			
 			// console.log("a =",a);
 			// console.log("id =",id);
-			console.log("count =",count);
+			// console.log("count =",count);
 			
 			li.appendChild(a);
 			ul.appendChild(li);
