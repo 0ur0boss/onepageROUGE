@@ -1,3 +1,4 @@
+
 /* ----------------- Navbar ----------------  */
 
 #menuToggle
@@ -220,6 +221,14 @@
 
 .artwork h3 {
   text-align: left;
+}
+
+.artwork_text h3 {
+  text-align: left;
+  font-family : "lustria", serif;
+} 
+.artwork h2 {
+  font-family : "lustria", serif;
 }
 
 .artwork p {
