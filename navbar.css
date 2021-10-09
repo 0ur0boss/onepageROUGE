@@ -23,11 +23,11 @@ html {
 	transform: translate(-50% 0);
 }
 #scroll-indicator li.active a {
-	height: 44px;
+	height: 50px;
 }
 
 /* le nom des rubrique */
-#scroll-indicator li:before {
+/* #scroll-indicator li:before {
 	content: attr(data-title);
 	position: absolute;
 	bottom: -5px;
@@ -40,7 +40,7 @@ html {
 	opacity: 0;
 	visibility: hidden;
 	transition: left 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
+} */
 
 /* les tiret normal */
 #scroll-indicator li:after {
