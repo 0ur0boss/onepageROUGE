@@ -292,6 +292,16 @@
 
 /* AUTRE (pour faire du responsive */
 
+@media screen and (max-width: 3840px) {
+  
+  #scroll-indicator {
+    position: sticky;
+    top: 50%;
+    left: 5px;
+    transform: translate(0, -50%);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .artwork {
     flex-direction: column;
@@ -299,6 +309,7 @@
   .artwork_text {
     margin: 0 100px;
   }
+  
 }
 
 @media screen and (max-width: 426px) {
@@ -330,6 +341,10 @@
   }
   .actions {
     margin: 0 0;
+  }
+
+  #scroll-indicator {
+    top: 5%;
   }
 }
 

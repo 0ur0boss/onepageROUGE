@@ -2,12 +2,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-#scroll-indicator {
-	position: sticky;
-	top: 50%;
-	left: 5px;
-	transform: translate(0, -50%);
-}
+
 #scroll-indicator ul {
 	margin: 0;
 	padding: 0;
