@@ -143,11 +143,8 @@
 
 /* ----------------- Contenu ----------------  */
 
-.test2 {
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-}
+
+/* artwork */
 
 #artwork1{
   margin-bottom: 75px;
@@ -175,24 +172,6 @@
   margin: 5px 5px;
 }
 
-.actions {
-  display: flex;
-  text-align: left;
-  justify-content: flex-start;
-  margin: 0 150px;
-}
-
-.btn-actions {
-  margin: 10px 15px;
-}
-
-.actions1 {
-  display: flex; 
-  justify-content: flex-end;
-  margin: 0 150px;
-}
-
-
 .artwork_text {
   margin: 0 150px;
 }
@@ -202,15 +181,6 @@
   align-self: center;
   margin: 5% auto;
   max-width: 400px;
-}
-
-.text_art {
-  font-size: 20px;
-  max-width: 400px;
-}
-
-.text_art p {
-  text-align: left !important;
 }
 
 .artwork_picture1 {
@@ -240,20 +210,73 @@
   text-align: left;
 }
 
+/* Actions */
+
+.actions {
+  display: flex;
+  text-align: left;
+  justify-content: flex-start;
+  margin: 0 150px;
+}
+
+.btn-actions {
+  margin: 10px 15px;
+}
+
+.actions1 {
+  display: flex; 
+  justify-content: flex-end;
+  margin: 0 150px;
+}
+
+/* div pour les btns collés à l'img */
+
+.test2 {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+/* textes */
+
+.text_art {
+  font-size: 20px;
+  max-width: 400px;
+}
+
+.text_art p {
+  text-align: left !important;
+}
+
+
 .introduction {
   font-size: 2.5vh;
   text-align: center;
   margin: 50px 150px;
 }
 
+/* a garder au cas ou */
 .contenu {
   font-size: 2.5vh;
   text-align: center;
-
 }
+
+/* img */
 
 .img1 {
   display: flex;
+}
+
+/*div pour plus de responsive*/
+
+.div-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-row {
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -267,17 +290,12 @@
 }
 
 
-/* AUTRE */
+/* AUTRE (pour faire du responsive */
 
 @media screen and (max-width: 768px) {
   .artwork {
     flex-direction: column;
   }
-  /* .img1 {
-      width: 10%;
-      height: 10%;
-      margin: auto;
-  } */
   .artwork_text {
     margin: 0 100px;
   }
@@ -316,14 +334,3 @@
 }
 
 
-/*ALVINA DIV alvina est une blg*/
-
-.div-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.div-row {
-  display: flex;
-  flex-direction: row;
-}
